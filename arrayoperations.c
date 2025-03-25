@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define SIZE 10
 
+// Array operations Done
 int arr[SIZE], n = 0;
 
 void insert(int pos, int value)
@@ -39,6 +40,7 @@ int main()
 {
     insert(0, 10);
     insert(1, 20);
+    insert(2, 30);
     insert(2, 30);
     printf("Array after insertions: ");
     display();

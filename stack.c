@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define SIZE 5
 
+// Done
 int stack[SIZE], top = -1;
 
 void push(int value)

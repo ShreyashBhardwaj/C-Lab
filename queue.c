@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define SIZE 5
 
+// Done
 int queue[SIZE], front = -1, rear = -1;
 
 void enqueue(int value)

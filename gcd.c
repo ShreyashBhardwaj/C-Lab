@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Done
 int gcd(int a, int b)
 {
     if (b == 0)
