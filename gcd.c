@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Done
+// Done 1
 int gcd(int a, int b)
 {
     if (b == 0)

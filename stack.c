@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define SIZE 5
 
-// Done
+// Done1
 int stack[SIZE], top = -1;
 
 void push(int value)
@@ -22,6 +22,7 @@ void pop()
 
 void display()
 {
+    int i;
     if (top == -1)
         printf("Stack is empty\n");
     else

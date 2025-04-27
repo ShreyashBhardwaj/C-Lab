@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define SIZE 10
 
-// Array operations Done
+// Array operations  Done
 int arr[SIZE], n = 0;
 
 void insert(int pos, int value)

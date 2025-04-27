@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define the structure for a node in the binary tree
-struct Node
+// Done
+
+// Define the structure for a node in the binary tree using typedef
+typedef struct Node
 {
     int data;
     struct Node *left;
     struct Node *right;
-};
+} Node;
 
 // Function to create a new node
-struct Node *createNode(int data)
+Node *createNode(int data)
 {
-    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+    Node *newNode = (Node *)malloc(sizeof(Node));
     newNode->data = data;
     newNode->left = NULL;
     newNode->right = NULL;
@@ -20,7 +22,7 @@ struct Node *createNode(int data)
 }
 
 // Inorder traversal
-void inorderTraversal(struct Node *node)
+void inorderTraversal(Node *node)
 {
     if (node == NULL)
     {
@@ -32,7 +34,7 @@ void inorderTraversal(struct Node *node)
 }
 
 // Preorder traversal
-void preorderTraversal(struct Node *node)
+void preorderTraversal(Node *node)
 {
     if (node == NULL)
     {
@@ -44,7 +46,7 @@ void preorderTraversal(struct Node *node)
 }
 
 // Postorder traversal
-void postorderTraversal(struct Node *node)
+void postorderTraversal(Node *node)
 {
     if (node == NULL)
     {
@@ -58,7 +60,7 @@ void postorderTraversal(struct Node *node)
 int main()
 {
     // Create the root node
-    struct Node *root = createNode(1);
+    Node *root = createNode(1);
     root->left = createNode(2);
     root->right = createNode(3);
     root->left->left = createNode(4);

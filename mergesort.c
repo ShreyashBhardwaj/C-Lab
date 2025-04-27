@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Done: 2023-10-01T12:00:00Z
+
 // Function to merge two sorted subarrays
 void merge(int arr[], int left, int mid, int right)
 {
